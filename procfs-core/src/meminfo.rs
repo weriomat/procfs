@@ -155,7 +155,7 @@ pub struct Meminfo {
     ///
     /// (since Linux 2.6.18)
     pub page_tables: Option<u64>,
-    /// Amount of memory allocated for seconary page tables. This currently includes KVM mmu
+    /// Amount of memory allocated for secondary page tables. This currently includes KVM mmu
     /// allocations on x86 and arm64.
     ///
     /// (since Linux 6.1)
@@ -273,7 +273,7 @@ pub struct Meminfo {
     /// needs documentation
     pub hugetlb: Option<u64>,
 
-    /// Memory allocated to the per-cpu alloctor used to back per-cpu allocations.
+    /// Memory allocated to the per-cpu allocator used to back per-cpu allocations.
     ///
     /// This stat excludes the cost of metadata.
     pub per_cpu: Option<u64>,
@@ -285,7 +285,7 @@ pub struct Meminfo {
 
     /// Undocumented field
     ///
-    /// (CONFIG_TRANSPARENT_HUGEPAGE is requried.  Since Linux 5.4)
+    /// (CONFIG_TRANSPARENT_HUGEPAGE is required.  Since Linux 5.4)
     pub file_pmd_mapped: Option<u64>,
 
     /// Undocumented field

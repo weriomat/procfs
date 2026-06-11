@@ -542,7 +542,7 @@ pub struct NFSOperationStat {
     pub cum_queue_time: Duration,
     /// How long it took to get a response back.
     pub cum_resp_time: Duration,
-    /// How long all requests have taken from beeing queued to the point they where completely
+    /// How long all requests have taken from being queued to the point they where completely
     /// handled.
     pub cum_total_req_time: Duration,
 }

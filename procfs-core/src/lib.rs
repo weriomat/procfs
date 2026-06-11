@@ -267,7 +267,7 @@ pub trait SystemInfoInterface {
 /// Auxiliary system information.
 pub type SystemInfo = dyn SystemInfoInterface;
 
-/// A convenience stuct implementing [SystemInfoInterface] with explicitly-specified values.
+/// A convenience struct implementing [SystemInfoInterface] with explicitly-specified values.
 #[derive(Debug, Clone, Copy)]
 #[cfg_attr(feature = "serde1", derive(Serialize, Deserialize))]
 pub struct ExplicitSystemInfo {

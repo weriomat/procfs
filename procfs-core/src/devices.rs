@@ -16,7 +16,7 @@ pub struct Devices {
     pub block_devices: Vec<BlockDeviceEntry>,
 }
 
-/// A charcter device entry under `/proc/devices`
+/// A character device entry under `/proc/devices`
 #[derive(Debug, Clone)]
 #[cfg_attr(feature = "serde1", derive(Serialize, Deserialize))]
 pub struct CharDeviceEntry {
