@@ -199,7 +199,7 @@ fn test_smaps() {
     let smaps = match me.smaps() {
         Ok(x) => x,
         Err(ProcError::NotFound(_)) => {
-            // ignored because not all kernerls have smaps
+            // ignored because not all kernels have smaps
             return;
         }
         Err(e) => panic!("{}", e),
@@ -213,7 +213,7 @@ fn test_smaps_rollup() {
     let smaps_rollup = match me.smaps_rollup() {
         Ok(x) => x,
         Err(ProcError::NotFound(_)) => {
-            // ignored because not all kernerls have smaps_rollup
+            // ignored because not all kernels have smaps_rollup
             return;
         }
         Err(e) => panic!("{}", e),

@@ -22,7 +22,7 @@
 //! sometimes the style of writing is not very "rusty", or may do things like reference related files
 //! (instead of referencing related structs).  Contributions to improve this are welcome.
 //!
-//! # Panicing
+//! # Panicking
 //!
 //! While previous versions of the library could panic, this current version aims to be panic-free
 //! in a many situations as possible.  Whenever the procfs crate encounters a bug in its own
@@ -859,7 +859,7 @@ mod tests {
         {
             assert!(meminfo.anon_hugepages.is_some());
         } else {
-            // SOme distributions may backport this option into older kernels
+            // Some distributions may backport this option into older kernels
             // assert!(meminfo.anon_hugepages.is_none());
         }
 

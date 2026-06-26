@@ -438,7 +438,7 @@ impl Process {
     /// let stats = Process::myself().unwrap().mountstats().unwrap();
     ///
     /// for mount in stats {
-    ///     println!("{} mounted on {} wth type {}",
+    ///     println!("{} mounted on {} with type {}",
     ///         mount.device.unwrap_or("??".to_owned()),
     ///         mount.mount_point.display(),
     ///         mount.fs

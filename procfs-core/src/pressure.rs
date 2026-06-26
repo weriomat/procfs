@@ -1,4 +1,4 @@
-//! Pressure stall information retreived from `/proc/pressure/cpu`,
+//! Pressure stall information retrieved from `/proc/pressure/cpu`,
 //! `/proc/pressure/memory` and `/proc/pressure/io`
 //! may not be available on kernels older than 4.20.0
 //! For reference: <https://lwn.net/Articles/759781/>
