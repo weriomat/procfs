@@ -397,6 +397,10 @@ impl Current for VmStat {
     const PATH: &'static str = "/proc/vmstat";
 }
 
+impl Current for KernelSchedStats {
+    const PATH: &'static str = "/proc/schedstat";
+}
+
 /// Get various virtual memory statistics
 ///
 /// Since the exact set of statistics will vary from kernel to kernel, and because most of them are

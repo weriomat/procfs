@@ -200,3 +200,32 @@ Type: sha256
   fips enabled: false
   Type Details: Shash(Shash { block_size: 64, digest_size: 32 })
 ```
+
+## Schedstat
+
+Provides scheduler statistics of the CPU, based on the `/proc/schedstat` file.
+
+Only a parser for version 17 is provided.
+
+```text
+Version: 17
+Timestamp: 4303530728
+CPU 0
+              sched_yield:                 12,777 counts
+              sched_yield:                 53,031 counts
+            schedule_idle:                 19,667 counts
+           try_to_wake_up:                 19,086 counts
+     try_to_wake_up_local:                  2,008 counts
+        all_tasks_runtime:        554,447,537,489 counts (        9m 14s)
+       all_tasks_waittime:         79,664,372,655 counts (        1m 19s)
+               timeslices:              8,435,578 counts
+CPU 1
+              sched_yield:                  8,523 counts
+              sched_yield:                 48,657 counts
+            schedule_idle:                 19,208 counts
+           try_to_wake_up:                 43,331 counts
+     try_to_wake_up_local:                  7,701 counts
+        all_tasks_runtime:      1,025,160,002,100 counts (        17m 5s)
+       all_tasks_waittime:        157,052,245,505 counts (        2m 37s)
+               timeslices:              7,964,673 counts
+```

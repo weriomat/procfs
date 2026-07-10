@@ -407,6 +407,9 @@ pub mod net;
 mod pressure;
 pub use pressure::*;
 
+mod schedstat;
+pub use schedstat::*;
+
 pub mod process;
 
 mod kpageflags;
